@@ -1,0 +1,299 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "AutoRent - API REST",
+  "dateExported": "2026-11-04T14:49:00.000Z",
+  "version": "1.1",
+  "folders": [
+    {
+      "_id": "folder-clientes",
+      "name": "1. Clientes",
+      "containerId": "",
+      "created": "2026-11-04T14:49:00.000Z",
+      "sortNum": 10000
+    },
+    {
+      "_id": "folder-vehiculos",
+      "name": "2. Vehículos",
+      "containerId": "",
+      "created": "2026-11-04T14:49:00.000Z",
+      "sortNum": 20000
+    },
+    {
+      "_id": "folder-empleados",
+      "name": "3. Empleados",
+      "containerId": "",
+      "created": "2026-11-04T14:49:00.000Z",
+      "sortNum": 30000
+    },
+    {
+      "_id": "folder-alquileres",
+      "name": "4. Alquileres",
+      "containerId": "",
+      "created": "2026-11-04T14:49:00.000Z",
+      "sortNum": 40000
+    }
+  ],
+  "requests": [
+    {
+      "_id": "req-clientes-get-all",
+      "colId": "col-autorent",
+      "containerId": "folder-clientes",
+      "name": "Obtener todos los clientes",
+      "url": "http://localhost:3000/api/clientes",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    },
+    {
+      "_id": "req-clientes-get-one",
+      "colId": "col-autorent",
+      "containerId": "folder-clientes",
+      "name": "Obtener cliente por ID",
+      "url": "http://localhost:3000/api/clientes/1",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    },
+    {
+      "_id": "req-clientes-post",
+      "colId": "col-autorent",
+      "containerId": "folder-clientes",
+      "name": "Crear nuevo cliente",
+      "url": "http://localhost:3000/api/clientes",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Mauricio Rojas Brenes\",\n  \"correo\": \"mrojas@corporacion.com\",\n  \"telefono\": \"+506 8544-9900\",\n  \"identificacion\": \"1-1567-0234\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req-clientes-put",
+      "colId": "col-autorent",
+      "containerId": "folder-clientes",
+      "name": "Actualizar cliente",
+      "url": "http://localhost:3000/api/clientes/1",
+      "method": "PUT",
+      "sortNum": 40000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Carlos Mendoza Rivera Actualizado\",\n  \"correo\": \"carlos.mendoza@empresa.com\",\n  \"telefono\": \"+506 8845-9999\",\n  \"identificacion\": \"1-1452-0893\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req-clientes-delete",
+      "colId": "col-autorent",
+      "containerId": "folder-clientes",
+      "name": "Eliminar cliente",
+      "url": "http://localhost:3000/api/clientes/4",
+      "method": "DELETE",
+      "sortNum": 50000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    },
+    {
+      "_id": "req-vehiculos-get-all",
+      "colId": "col-autorent",
+      "containerId": "folder-vehiculos",
+      "name": "Obtener todos los vehículos",
+      "url": "http://localhost:3000/api/vehiculos",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    },
+    {
+      "_id": "req-vehiculos-get-one",
+      "colId": "col-autorent",
+      "containerId": "folder-vehiculos",
+      "name": "Obtener vehículo por ID",
+      "url": "http://localhost:3000/api/vehiculos/1",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    },
+    {
+      "_id": "req-vehiculos-post",
+      "colId": "col-autorent",
+      "containerId": "folder-vehiculos",
+      "name": "Crear nuevo vehículo",
+      "url": "http://localhost:3000/api/vehiculos",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"marca\": \"Mercedes-Benz\",\n  \"modelo\": \"C300 AMG Line\",\n  \"anio\": 2024,\n  \"placa\": \"MBZ-777\",\n  \"precio_dia\": 155.00,\n  \"estado\": \"Disponible\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req-vehiculos-put",
+      "colId": "col-autorent",
+      "containerId": "folder-vehiculos",
+      "name": "Actualizar vehículo",
+      "url": "http://localhost:3000/api/vehiculos/2",
+      "method": "PUT",
+      "sortNum": 40000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"marca\": \"BMW\",\n  \"modelo\": \"330i M Sport\",\n  \"anio\": 2024,\n  \"placa\": \"LUX-889\",\n  \"precio_dia\": 130.00,\n  \"estado\": \"Disponible\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req-vehiculos-delete",
+      "colId": "col-autorent",
+      "containerId": "folder-vehiculos",
+      "name": "Eliminar vehículo",
+      "url": "http://localhost:3000/api/vehiculos/5",
+      "method": "DELETE",
+      "sortNum": 50000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    },
+    {
+      "_id": "req-empleados-get-all",
+      "colId": "col-autorent",
+      "containerId": "folder-empleados",
+      "name": "Obtener todos los empleados",
+      "url": "http://localhost:3000/api/empleados",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    },
+    {
+      "_id": "req-empleados-get-one",
+      "colId": "col-autorent",
+      "containerId": "folder-empleados",
+      "name": "Obtener empleado por ID",
+      "url": "http://localhost:3000/api/empleados/1",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    },
+    {
+      "_id": "req-empleados-post",
+      "colId": "col-autorent",
+      "containerId": "folder-empleados",
+      "name": "Crear nuevo empleado",
+      "url": "http://localhost:3000/api/empleados",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Esteban Morales Cordero\",\n  \"correo\": \"emorales@autorent.com\",\n  \"telefono\": \"+506 2250-1004\",\n  \"cargo\": \"Supervisor de Sucursal\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req-empleados-put",
+      "colId": "col-autorent",
+      "containerId": "folder-empleados",
+      "name": "Actualizar empleado",
+      "url": "http://localhost:3000/api/empleados/1",
+      "method": "PUT",
+      "sortNum": 40000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Laura Fernández Vega\",\n  \"correo\": \"lfernandez@autorent.com\",\n  \"telefono\": \"+506 2250-1099\",\n  \"cargo\": \"Gerente de Ventas Corporativas\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req-empleados-delete",
+      "colId": "col-autorent",
+      "containerId": "folder-empleados",
+      "name": "Eliminar empleado",
+      "url": "http://localhost:3000/api/empleados/3",
+      "method": "DELETE",
+      "sortNum": 50000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    },
+    {
+      "_id": "req-alquileres-get-all",
+      "colId": "col-autorent",
+      "containerId": "folder-alquileres",
+      "name": "Obtener todos los alquileres",
+      "url": "http://localhost:3000/api/alquileres",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    },
+    {
+      "_id": "req-alquileres-get-one",
+      "colId": "col-autorent",
+      "containerId": "folder-alquileres",
+      "name": "Obtener alquiler por ID",
+      "url": "http://localhost:3000/api/alquileres/1",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    },
+    {
+      "_id": "req-alquileres-post",
+      "colId": "col-autorent",
+      "containerId": "folder-alquileres",
+      "name": "Crear nuevo alquiler",
+      "url": "http://localhost:3000/api/alquileres",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"cliente_id\": 3,\n  \"vehiculo_id\": 3,\n  \"empleado_id\": 2,\n  \"fecha_inicio\": \"2026-11-10\",\n  \"fecha_fin\": \"2026-11-14\",\n  \"total\": 300.00,\n  \"estado\": \"Activo\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req-alquileres-put",
+      "colId": "col-autorent",
+      "containerId": "folder-alquileres",
+      "name": "Actualizar alquiler",
+      "url": "http://localhost:3000/api/alquileres/1",
+      "method": "PUT",
+      "sortNum": 40000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"cliente_id\": 1,\n  \"vehiculo_id\": 1,\n  \"empleado_id\": 1,\n  \"fecha_inicio\": \"2026-11-01\",\n  \"fecha_fin\": \"2026-11-07\",\n  \"total\": 390.00,\n  \"estado\": \"Finalizado\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req-alquileres-delete",
+      "colId": "col-autorent",
+      "containerId": "folder-alquileres",
+      "name": "Eliminar alquiler",
+      "url": "http://localhost:3000/api/alquileres/3",
+      "method": "DELETE",
+      "sortNum": 50000,
+      "created": "2026-11-04T14:49:00.000Z",
+      "headers": []
+    }
+  ]
+}
+

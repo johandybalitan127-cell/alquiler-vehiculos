@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#b33f6e" />
+      <stop offset="55%" stop-color="#87264e" />
+      <stop offset="100%" stop-color="#2c0e1c" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="20" y1="25" x2="100" y2="95" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f7d6e2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo circular ejecutivo con doble anillo -->
+  <circle cx="60" cy="60" r="58" fill="url(#bgGrad)" />
+  <circle cx="60" cy="60" r="52.5" stroke="#f7d6e2" stroke-opacity="0.38" stroke-width="1.5" />
+
+  <!-- Silueta de automóvil ejecutivo en la parte superior -->
+  <path
+    d="M27 51 C34 49, 41 37, 54 36 L72 36 C82 36, 89 44, 95 49 C98 51, 98 54, 95 56 L26 56 C23 55, 24 52, 27 51 Z"
+    fill="url(#accentGrad)"
+    fill-opacity="0.2"
+  />
+  <path
+    d="M25 53 C32 50, 40 36, 54 35 L72 35 C82 35, 89 43, 96 50"
+    stroke="url(#accentGrad)"
+    stroke-width="3.4"
+    stroke-linecap="round"
+  />
+  <path
+    d="M23 57 H33 M47 57 H73 M87 57 H97"
+    stroke="#ffffff"
+    stroke-width="2.8"
+    stroke-linecap="round"
+  />
+  <circle cx="40" cy="57" r="5.5" stroke="#ffffff" stroke-width="2.8" fill="#6b1d3d" />
+  <circle cx="80" cy="57" r="5.5" stroke="#ffffff" stroke-width="2.8" fill="#6b1d3d" />
+
+  <!-- Texto RENT CAR -->
+  <text
+    x="60"
+    y="76"
+    text-anchor="middle"
+    fill="#f7d6e2"
+    font-family="Plus Jakarta Sans, Segoe UI, sans-serif"
+    font-weight="700"
+    font-size="10.5"
+    letter-spacing="2.8"
+  >
+    RENT CAR
+  </text>
+
+  <!-- Texto principal FIOS -->
+  <text
+    x="60"
+    y="96"
+    text-anchor="middle"
+    fill="#ffffff"
+    font-family="Plus Jakarta Sans, Segoe UI, sans-serif"
+    font-weight="800"
+    font-size="20"
+    letter-spacing="4"
+  >
+    FIOS
+  </text>
+</svg>
