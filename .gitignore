@@ -20,4 +20,6 @@ lerna-debug.log*
 .DS_Store
 Thumbs.db
 *.sw?
+push_log.txt
+subir_a_github.bat
 
